@@ -61,6 +61,6 @@ module.exports = {
     host: '0.0.0.0', // default: localhost,
   },
   env:{
-    root:'[需要修改]前端的访问地址，如http://localhost:3000/'
+    root:'http://localhost:3000/'
   }
 }
