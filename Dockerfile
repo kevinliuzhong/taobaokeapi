@@ -7,7 +7,9 @@ WORKDIR $APP_DIR
 COPY . $APP_DIR/
 
 RUN npm install
+RUN npm run build
 
-EXPOSE 3000
 
-CMD ["npm", "run", "dev"]
+EXPOSE 30000
+
+CMD ["npm", "run", "start"]
