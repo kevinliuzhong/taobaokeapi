@@ -57,10 +57,10 @@ module.exports = {
     }
   },
   server: {
-    port: 30000, // default: 3000
-    host: '0.0.0.0', // default: localhost,
+    port: process.env.PORT, // default: 3000
+    host: process.env.HOST, // default: localhost,
   },
   env:{
-    root:'http://localhost:30000/'
+    root: process.env.BASE_URL || 'http://localhost:3000'
   }
 }
