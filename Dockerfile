@@ -6,6 +6,8 @@ RUN mkdir -p $APP_DIR
 WORKDIR $APP_DIR
 COPY . $APP_DIR/
 
+ENV HOST 0.0.0.0
+
 RUN npm install
 RUN npm run build
 
