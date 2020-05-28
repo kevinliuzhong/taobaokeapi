@@ -8,6 +8,7 @@ COPY . $APP_DIR/
 
 ENV HOST = 0.0.0.0
 ENV PORT = 30000
+ENV baseUrl="https://newing.org/tbk"
 
 RUN npm install
 
