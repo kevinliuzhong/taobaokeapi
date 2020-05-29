@@ -61,7 +61,7 @@ module.exports = {
     host: process.env.HOST, // default: localhost,
   },
   env:{
-    root: 'http://localhost:'+process.env.PORT,
+    root: process.env.root,
     baseURL: process.env.baseUrl,
     publicPath: process.env.baseUrl || '/',
     baseUrl: process.env.baseUrl || '/'  
