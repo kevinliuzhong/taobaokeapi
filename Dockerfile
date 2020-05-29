@@ -16,11 +16,11 @@ RUN npm install
 COPY . .
 
 ENV HOST=0.0.0.0
-ENV PORT=8080
-ENV root=http://localhost:8080
+ENV PORT=3000
+ENV root=http://localhost:3000
 
 # build app for production with minification
 RUN npm run build
 
-EXPOSE 8080
-CMD [ "http-server", "dist", "-a", "0.0.0.0"]
+EXPOSE 3000
+CMD [ "npm", "start"]
