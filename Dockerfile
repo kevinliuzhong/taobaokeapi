@@ -17,7 +17,7 @@ COPY . .
 
 ENV HOST=0.0.0.0
 ENV PORT=3000
-ENV root=https://newing.org
+ENV root=https://newing.org/
 
 # build app for production with minification
 RUN npm run build
